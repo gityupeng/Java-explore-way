@@ -1,4 +1,4 @@
-package com.java.explore.way.basis;
+package com.java.explore.way.basis.socket;
 
 import java.io.BufferedReader;
 import java.io.IOException;

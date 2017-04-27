@@ -1,4 +1,4 @@
-package com.java.explore.way.basis;
+package com.java.explore.way.basis.socket;
 
 /**
  * Created by yu on 2017/4/27.
