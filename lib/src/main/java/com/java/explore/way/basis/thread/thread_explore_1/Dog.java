@@ -26,15 +26,23 @@ public class Dog {
 //        }
 //    }
 
+//    public  void setAge(int age,String threadId) {
+//        lock.lock();
+//        try {
+//            this.age = age;
+//            System.out.println("线程ID==" + threadId + "---dog age == "+ age);
+//        }finally {
+//            lock.unlock();
+//        }
+//
+//    }
+
+    //ThreadLocal也能达到同步的效果
     public  void setAge(int age,String threadId) {
-        lock.lock();
-        try {
+            ThreadLocal local = new ThreadLocal();
+            local.set(this);
             this.age = age;
             System.out.println("线程ID==" + threadId + "---dog age == "+ age);
-        }finally {
-            lock.unlock();
-        }
-
     }
 
 }
