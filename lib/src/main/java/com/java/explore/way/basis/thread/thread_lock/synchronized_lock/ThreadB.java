@@ -1,14 +1,14 @@
-package com.java.explore.way.basis.thread.thread_explore_2;
+package com.java.explore.way.basis.thread.thread_lock.synchronized_lock;
 
 /**
  * Created by yu on 2017/4/29.
  */
 
-public class ThreadC extends Thread {
+public class ThreadB extends Thread {
 
     public Object mLock;
 
-    public ThreadC(Object lock){
+    public ThreadB(Object lock){
         mLock = lock;
     }
 
@@ -17,12 +17,12 @@ public class ThreadC extends Thread {
         while (true){
             synchronized (mLock){
                 try {
-                    if (Main.runThr){
-                        System.out.println("线程id=="+ Thread.currentThread() + "打印数字==" + 3);
+                    if (Main.runSec){
+                        System.out.println("线程id=="+ Thread.currentThread() + "打印数字==" + 2);
                         Thread.sleep(2000);
                         Main.runSec = false;
-                        Main.runThr = false;
-                        Main.runFir = true;
+                        Main.runThr = true;
+                        Main.runFir = false;
                         mLock.notifyAll();
                     }else {
                         mLock.wait();
@@ -34,4 +34,7 @@ public class ThreadC extends Thread {
             }
         }
     }
+
+
+
 }

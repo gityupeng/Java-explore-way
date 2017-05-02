@@ -1,8 +1,8 @@
-package com.java.explore.way.basis.thread.thread_explore_2;
+package com.java.explore.way.basis.thread.thread_lock.synchronized_lock;
 
 /**
  * Created by yu on 2017/4/29.
- * 多线程轮询打印1，2，3
+ * 多线程轮询打印1，2，3,synchronized实现
  */
 
 public class Main {
