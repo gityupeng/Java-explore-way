@@ -18,7 +18,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Main {
 
-     public static int mPrintNum = 1;
+    public static int mPrintNum = 1;
 
     public static ReentrantLock reentrantLock = new ReentrantLock();
     public static Condition conditionA = reentrantLock.newCondition();

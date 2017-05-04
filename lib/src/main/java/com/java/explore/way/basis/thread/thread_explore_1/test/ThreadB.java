@@ -1,4 +1,6 @@
-package com.java.explore.way.basis.thread.thread_explore_1;
+package com.java.explore.way.basis.thread.thread_explore_1.test;
+
+import com.java.explore.way.basis.thread.thread_explore_1.test.Dog;
 
 /**
  * Created by yu on 2017/4/29.

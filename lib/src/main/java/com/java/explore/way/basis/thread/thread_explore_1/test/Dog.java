@@ -1,4 +1,4 @@
-package com.java.explore.way.basis.thread.thread_explore_1;
+package com.java.explore.way.basis.thread.thread_explore_1.test;
 
 import java.util.concurrent.locks.ReentrantLock;
 
